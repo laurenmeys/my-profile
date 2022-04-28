@@ -1,0 +1,278 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color:#faeee7;
+	font-family: Noto Sans, sans-serif;
+	font-size: 15px;
+	margin: 0px;
+}
+
+h1 {
+	font-family:Noto Sans, sans-serif;
+	font-weight: 800 ;
+	letter-spacing: 2px ;
+	font-size: 25px;
+	color:#F786AA;
+}
+
+
+h2 {
+	font-family:Noto Sans, sans-serif;
+	font-weight: 800 ;
+	letter-spacing: 2px ;
+	font-size: 25px;
+	color:#F786AA;
+}
+
+
+h3 {
+	font-family:Noto Sans, sans-serif;
+	font-weight: 800 ;
+	letter-spacing: 2px ;
+	font-size: 15px;
+	color:#F786AA;
+}
+
+li {
+	list-style: none;
+ 	list-style-type: "\1F338";
+ 	padding-left: 15px;
+ 	margin-left: 30px;
+ 	line-height: 1.5;
+ 	text-align: left;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+a {
+text-decoration: none;
+	}
+
+.banner{
+background-image:linear-gradient(180deg, rgba(0,0,0,0.0) 80%, rgba(250, 238, 231,1) 100%), url(images/banner.png);
+padding-top: 85px;
+padding-bottom: 50px;
+background-size: cover;
+background-position:center;
+}
+
+.banner H1 {
+	font-size: 50px;
+	font-weight: bolder;
+	color: #33272a;
+	margin: 10px 0px;
+
+}
+
+.banner H2 {
+	font-size: 40px;
+	font-weight:normal;
+	color: #33272a;
+	margin: 0px 10px;
+}
+
+.banner p {
+	font-size: 20px;
+	font-weight: lighter;
+	color: #594a4e;
+}
+
+
+.btn-pink {
+  background-color: #ff8ba7;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  transition: width 0.3s, height 0.3s, background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.btn-pink:hover {
+  background-color: #ad4760;
+  color: white;
+  transition: 0.3 ease;
+}
+
+.container {
+	width: 800px;
+	margin: 20px auto;
+	border: 1px white;
+	border-radius: 10px;
+	padding: 15px;
+	background-color:#fffffe;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.exp {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.img-circle {
+	border-radius:  50%;
+	width: 100px;
+	height: 100px;
+}
+
+.cards-gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 0.5rem solid;
+  background-color: #ffc6c7;
+  text-align: center;
+  justify-content: center;
+}
+
+#img-square {
+  object-fit: cover;
+  width:75px;
+  height:75px;
+}
+
+@media (max-width: 540px) {
+	.cards-gallery {
+		  grid-template-columns: 1fr 1fr 1fr;
+		    text-align: center;
+
+	}
+}
+
+
+
+.grid-cards {
+display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.little-cards-white {
+  background: #fffffe;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 7px;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.little-cards-white H4{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.little-cards-white H5{
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.little-cards-white p {
+  font-size: 12px;
+}
+
+.little-cards-white img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 10px 0px;
+}
+
+.little-cards-white h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+  margin-top: 5px;
+  color: black;
+}
+
+#li-poste li {
+		list-style: none;
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+}
+
+#img-circle-banner {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+
+
+
+
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+.list-inline i {
+  font-size: 50px;
+  color: #ff8ba7;
+}
+.list-inline i:hover {
+  color: #ad4760;
+  transition: 0.3s ease;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+  .grid-cards {
+  	grid-template-columns: 1fr 1fr
+  }
+
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+    .grid-cards {
+  	grid-template-columns: 1fr
+  }
+
+  .exp {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards-gallery {
+  grid-template-columns: 1fr 1fr;
+}
+
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+    .grid-cards {
+  	grid-template-columns: 1fr
+  }
+    .exp {
+    grid-template-columns: 1fr 1fr;
+}
+.cards-gallery {
+  grid-template-columns: 1fr 1fr;
+}
+}
